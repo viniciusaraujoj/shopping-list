@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="./img/note.png" alt="" />
+        <h1>Shopping List</h1>
+      </header>
+
+      <form id="form" class="enter-item-container">
+        <input
+          class="enter-item"
+          type="text"
+          placeholder="Enter Item"
+          name="itemName"
+        />
+        <button type="submit" class="btn add-item">
+          <i class="fa-solid fa-plus"></i> Add Item
+        </button>
+      </form>
+
+      <input
+        class="filter-items"
+        type="text"
+        placeholder="Filter Items"
+        name="filter"
+      />
+
+      <ul class="list-items">
+        <li class="item">Apples <i class="fa-solid fa-xmark del-btn"></i></li>
+        <li class="item">
+          Orange Juice <i class="fa-solid fa-xmark del-btn"></i>
+        </li>
+        <li class="item">Oreos <i class="fa-solid fa-xmark del-btn"></i></li>
+        <li class="item">Milk <i class="fa-solid fa-xmark del-btn"></i></li>
+      </ul>
+
+      <button class="btn btn-clear">Clear All</button>
+
+      <!-- js -->
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
